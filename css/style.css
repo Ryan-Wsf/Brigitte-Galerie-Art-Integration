@@ -588,3 +588,82 @@ footer div:nth-child(1){
     text-align: center;
 }
 }
+
+/* Page numéro 2 */
+
+
+#section7{
+    background-image: url(/img/favicon.png);
+    background-repeat: no-repeat;
+    padding: 100px 0px;
+    background-position: 1075px;
+    background-size:450px;
+}
+#divsection7{
+    max-width: 1440px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 0px 15px;
+}
+
+#divsection7 article{
+    padding-top: 40px;
+}
+
+#divsection7>div{
+    padding-left:15px;
+    width: 70%;
+}
+
+#divsection7 h1{
+    font-family: var(--gloria);
+    font-size: 45px;
+    line-height: 45px;
+    padding-bottom: 20px;
+}
+
+#divsection7 article{
+    display: flex;
+    align-items: baseline;
+}
+
+#divsection7 h2, h3, h4{
+    font-family: var(--gloria);
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+#divsection7 div:nth-child(1) img{
+    padding-right: 15px;
+}
+
+.p_section7 p{
+    font-family: var(--gloria);
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.class1{
+    display: grid;
+}
+
+.label1{
+    padding: 5px 0px;
+}
+
+#envoyer{
+    background-color: var(--rose);
+    border-color: var(--rose);
+    margin: 10px 0px;
+    padding: 10px;
+}
+
+#divsection7>form{
+    width: 60%;
+}
+
+#divsection7 input, textarea{
+    padding: 5px 10px
+}
