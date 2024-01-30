@@ -2,6 +2,7 @@
 
 *{
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -11,6 +12,11 @@
     --rose:#fbbbcd;
     --gloria:'Gloria Hallelujah', cursive;
     --noto:'Noto Serif Display', serif;
+}
+
+nav li{
+    font-family: var(--noto);
+    font-weight: 600;
 }
 
 h2{
@@ -23,6 +29,41 @@ h3{
     font-family: var(--gloria);
     font-size: 28px;
     line-height: 28px;
+}
+
+p{
+    font-family:var(--noto);
+    font-size: 16px;
+}
+
+.lien{
+    text-decoration: none;
+    color: var(--noir);
+    border: 2px solid var(--rose);
+    padding: 6px 18px;
+    transition: all 0.3s;
+}
+
+.lien:hover{
+    color: var(--blanc);
+    border: 2px solid var(--rouge);
+    background-color: var(--rouge);
+    padding: 6px 18px;
+    transition: all 0.3s;
+}
+
+.lien2{
+    color: black;
+    text-decoration: none;
+    font-family: var(--noto);
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.lien2:hover{
+    color:var(--rouge);
+    transition: all 0.3s;
 }
 
 header{
@@ -39,6 +80,12 @@ header img:nth-child(1){
     max-height: 105px;
 }
 
+header>a>img{
+    width:180px;
+    max-height: initial!important;
+}
+
+
 header ul{
     display: flex
 }
@@ -52,6 +99,14 @@ header li{
 header ul li a{
     text-decoration: none;
     color: black;
+    transition: all 0.3s;
+    font-family: var(--noto);
+    font-size: 16px;
+}
+
+header ul li a:hover{
+    color: var(--rouge);
+    transition: all 0.3s;
 }
 
 #accueil a{
@@ -63,12 +118,17 @@ header div a{
 }
 
 #section1{
+    padding: 100px 15px;
     background-image: url(/img/favicon.png);
     background-repeat: no-repeat;
+    background-position-x: 975px;
+    background-size: 700px;
+    background-position-y: -35px;
 }
 
 #section1 img{
     width: 100%;
+
 }
 
 #divsection1{
@@ -102,8 +162,271 @@ header div a{
     gap: 10px;
 }
 
-#divsection1 h2, h3, p{
-    padding-top: 30px;
+#divsection1 h2, h3{
+    padding-top: 25px;
 }
 
+#divsection1 p{
+    padding: 25px 0px;
+}
 
+#section2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+
+}
+
+#section2 p{
+    font-size: 18px;
+}
+
+#section2 div{
+    background-color: var(--rose);
+    height: 100%;
+    display: grid;
+    align-items: center;
+}
+
+#section2 article:nth-child(1){
+    max-width: 480px;
+    margin: auto;
+    padding:15px;
+}
+#section2 article:nth-child(1) p{
+    padding-top: 50px;
+}
+
+#section2 img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+#section2 article:nth-child(2){
+    display: grid;
+    grid-template-columns: repeat(4,2fr);
+    padding: 10px;
+    gap: 10px;
+}
+
+#section2 img:nth-child(5){
+    grid-column: 1/3;
+}
+
+#section2 img:nth-child(6){
+    grid-column: 3/6;
+}
+
+#section2 article:nth-child(2) a{
+    font-size: 16px;
+    color: var(--noir);
+}
+
+#section3{
+    max-width: 1440px;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+#section3 div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+    padding: 150px 15px 80px 15px;
+    align-items: center;
+}
+
+#section3 div:nth-child(2) img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#section3 div:nth-child(2){
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+}
+
+#section3 div:nth-child(2) h3{
+    font-size: 25px;
+}
+
+#section3 div:nth-child(2) h3{
+    padding-bottom: 20px;
+}
+
+#section3 div:nth-child(2) article{
+    padding: 0px 15px;
+}
+
+#section4{
+    padding:15px;
+    background-color: gainsboro;
+    margin-bottom: 100px;
+}
+
+#section4 h2{
+    text-align: center;
+    padding: 50px 0px;
+}
+#divsection4{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    max-width: 1440px;
+    margin: auto;
+}
+
+#divsection4 article{
+    padding: 0 15px;
+}
+
+#divsection4 article img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+
+}
+
+.classsection4{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px;
+}
+
+.classsection4 img{
+    max-width: 25px;
+    max-height: 25px;
+    object-fit: cover;
+}
+
+#section5{
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 15px 100px 15px;
+}
+
+#section5 div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    align-items: center;
+}
+
+#section5 div:nth-child(2){
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+}
+
+#section5 div:nth-child(2) img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+#section5 h4{
+    padding: 20px 0px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#section5 h3{
+    font-size: 18px;
+}
+
+#section5 p{
+    padding-bottom: 20px;
+}
+
+#section6{
+    background-color: var(--rouge);
+}
+
+#section6 div{
+    text-align: center;
+    max-width: 720px;
+    margin: auto;
+    color: var(--blanc);
+    padding: 150px;
+}
+
+#section6 div p{
+    padding: 40px;
+}
+
+#section6 div a{
+    color: var(--blanc);
+    text-decoration: none;
+    border: 2px solid var(--blanc);
+    padding: 6px 18px;
+    transition: all 0.3s;
+}
+
+#section6 div a:hover{
+    color: var(--rouge);
+    border: 2px solid var(--rouge);
+    background-color: var(--blanc);
+    padding: 6px 18px;
+    transition: all 0.3s;
+}
+
+footer{
+    background-color: var(--blanc);
+}
+
+footer img:nth-child(1){
+    max-width: 180px;
+    max-height: 105px;
+    padding: 10px;
+}
+
+footer div:nth-child(1){
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer div ul{
+    display: flex;
+    padding: 0;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+
+footer div li{
+    list-style: none;
+}
+
+footer div li a{
+    text-decoration: none;
+    color: var(--noir);
+    transition: all  0.3s;
+}
+
+footer div li a:hover{
+    color: var(--rouge);
+    transition: all  0.3s;
+}
+
+footer div p{
+    text-align: center;
+}
+
+footer div p a{
+    text-decoration: none;
+    color: var(--noir);
+    transition: all 0.3s;
+}
+
+footer div p a:hover{
+    color: var(--rouge);
+    transition: all 0.3s;
+}
+
+footer>div>a>img{
+    width:180px;
+    max-height: initial!important;
+}
