@@ -14,6 +14,10 @@
     --noto:'Noto Serif Display', serif;
 }
 
+#leburger{
+    display: none;
+}
+
 nav li{
     font-family: var(--noto);
     font-weight: 600;
@@ -262,7 +266,7 @@ header div a{
 
 #section4{
     padding:15px;
-    background-color: gainsboro;
+    background-color: #F7F7F7;
     margin-bottom: 100px;
 }
 
@@ -429,4 +433,158 @@ footer div p a:hover{
 footer>div>a>img{
     width:180px;
     max-height: initial!important;
+}
+
+@media screen and (max-width: 1024px){
+
+#leburger{
+    display: block;
+}
+
+header nav{
+    display: none;
+}
+
+header div{
+    display: none;
+}
+
+#divsection1{
+    display: block;
+    padding: 0px;
+}
+
+#divsection1 img{
+    padding-top: 50px;
+}
+
+#section2{
+    display: block;
+}
+
+#section3 div:nth-child(2){
+    grid-template-columns: repeat(2,1fr);
+}
+
+#section3 div:nth-child(2) p{
+    padding-bottom: 15px;
+}
+
+#divsection4{
+    grid-template-columns: repeat(2,1fr);
+}
+
+.lien{
+    text-align: center;
+}
+
+#section5 div:nth-child(2){
+    display: block;
+}
+
+#section5 div:nth-child(2) img{
+    padding-top: 50px;
+}
+
+#section5 h2{
+    font-size: 40px;
+}
+
+#section6 div{
+    padding: 100px 0px;
+}
+
+footer div:nth-child(1){
+    display: grid;
+    padding: 15px;
+}
+
+footer div ul{
+    display: block;
+}
+
+footer div div:nth-child(2){
+    grid-row: 4;
+    padding-top: 20px;
+}
+}
+
+@media screen and (max-width: 767px){
+
+#leburger{
+    display: block;
+}
+
+#section1 article:nth-child(1){
+    width: 100%;
+}
+
+#section1 article:nth-child(1) h2{
+    font-size: 25px;
+}
+
+#section1 article:nth-child(1) h3{
+    font-size: 15px;
+}
+
+#section2 article:nth-child(1){
+    text-align: center;
+}
+
+#section2 article:nth-child(1) h2{
+    font-size: 25px;
+}
+
+#section2 article:nth-child(2){
+    display: block;
+}
+
+#section3 div:nth-child(1){
+    display: block;
+    text-align: center;
+}
+
+#section3 div:nth-child(1) h2{
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+#section3 div:nth-child(2){
+    display: block;
+}
+
+#section4 h2{
+    font-size:25px;
+}
+#divsection4{
+    display: block;
+}
+
+#divsection4 article{
+    padding: 0px;
+}
+
+#divsection4 h3{
+    padding: 25px 0px;
+}
+
+#section5 div:nth-child(1){
+    display: block;
+    text-align: center;
+}
+
+#section5 div:nth-child(1) h2{
+    font-size: 25px;
+    padding: 20px 0px;
+    line-height: 25px;
+}
+
+#section6 div h2{
+    font-size: 25px;
+    line-height: 25px;
+}
+
+footer div:nth-child(1){
+    text-align: center;
+}
 }
