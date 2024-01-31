@@ -125,7 +125,7 @@ header div a{
     padding: 100px 15px;
     background-image: url(/img/favicon.png);
     background-repeat: no-repeat;
-    background-position-x: 975px;
+    background-position-x: 1050px;
     background-size: 700px;
     background-position-y: -35px;
 }
@@ -402,6 +402,7 @@ footer div ul{
 
 footer div li{
     list-style: none;
+    padding: 5px;
 }
 
 footer div li a{
@@ -455,7 +456,13 @@ header div{
 }
 
 #divsection1 img{
-    padding-top: 50px;
+    padding: 10% 15% 10% 0%;
+    background-image: url(/img/favicon.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 129%;
+    margin: 30px 0px;
+    width: 600px;
 }
 
 #section2{
@@ -517,6 +524,10 @@ footer div div:nth-child(2){
 
 #section1 article:nth-child(1){
     width: 100%;
+}
+
+#section1 img{
+    width: 240px;
 }
 
 #section1 article:nth-child(1) h2{
@@ -593,11 +604,7 @@ footer div:nth-child(1){
 
 
 #section7{
-    background-image: url(/img/favicon.png);
-    background-repeat: no-repeat;
     padding: 100px 0px;
-    background-position: 1075px;
-    background-size:450px;
 }
 #divsection7{
     max-width: 1440px;
@@ -612,7 +619,6 @@ footer div:nth-child(1){
 }
 
 #divsection7>div{
-    padding-left:15px;
     width: 70%;
 }
 
@@ -662,8 +668,59 @@ footer div:nth-child(1){
 
 #divsection7>form{
     width: 60%;
+    background-image: url(/img/favicon.png);
+    background-repeat: no-repeat;
+    padding: 50px 192px 50px 0px;
+    background-size: 68%;
+    background-position: 118%;
+
 }
 
 #divsection7 input, textarea{
     padding: 5px 10px
+}
+
+
+@media screen and (max-width: 1024px){
+
+#divsection7{
+    display: block;
+}
+#divsection7>div{
+    width: 70%;
+    
+}
+
+#divsection7>form {
+    width: 60%;
+}
+
+footer{
+    display: flex;
+    text-align: center;
+}
+
+}
+
+@media screen and (max-width: 767px){
+
+footer{
+    display: flex;
+    text-align: center;
+}
+
+#divsection7>div{
+    width: 100%;
+}
+    
+#divsection7>form {
+    width: 100%;
+    padding:40px 0px;
+    background-image: none;
+}
+
+#divsection7 article p{
+    line-height: 30px
+}
+
 }
