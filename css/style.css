@@ -128,7 +128,7 @@ header ul li a:hover{
     transition: all 0.3s;
 }
 
-#accueil a{
+.active a{
     color:var(--rouge);
 }
 
