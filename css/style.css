@@ -204,7 +204,6 @@ header div a{
     background-color: var(--rose);
     height: 100%;
     display: grid;
-    align-items: center;
 }
 
 #section2 article:nth-child(1){
@@ -461,6 +460,8 @@ footer>div>a>img{
 
 #leburger{
     display: block;
+    cursor: pointer;
+    color: var(--rouge);
 }
 
 header nav{
@@ -541,6 +542,8 @@ footer div div:nth-child(2){
 
 #leburger{
     display: block;
+    cursor: pointer;
+    color: var(--rouge);
 }
 
 #section1 article:nth-child(1){
